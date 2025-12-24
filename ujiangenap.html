@@ -21,7 +21,7 @@
       let sesi = prompt("Sesi pembelian (pagi / siang / malam) :").toLowerCase();
 
       let diskon = 0; // deklarasi SEKALI, sebelum if
-
+	
       if (sesi === "pagi") {
         if (jumlahBeli <= 10) {
             diskon = 0;
@@ -61,7 +61,8 @@
       totalPendapatan += totalBayar;
       totalDiskon += diskon;
 
-      dataTransaksi.push({
+      //NGEPUSH 
+		dataTransaksi.push({
         jenisBaju,
         hargaSatuan,
         jumlahBeli,
